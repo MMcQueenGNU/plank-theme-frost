@@ -1,11 +1,11 @@
 # Maintainer: McQueen <clear3239@yahoo.com>
-_pkgname=plank-theme-float
+_pkgname=plank-theme-frost
 pkgname=$_pkgname-git
-pkgver=0.2
+pkgver=0.1
 pkgrel=1
-pkgdesc="Float theme for Plank"
+pkgdesc="Frost theme for Plank"
 arch=('any')
-url='https://www.gnome-look.org/p/1238283/'
+url='https://www.gnome-look.org/p/1111286/'
 license=('GPL3')
 depends=('plank')
 makedepends=('git')
@@ -18,6 +18,6 @@ build() {
 
 package() {
 	cd $srcdir/$pkgname
-	mkdir -p $pkgdir/usr/share/plank/themes/float
-	install -m 755 dock.theme $pkgdir/usr/share/plank/themes/float/
+	mkdir -p $pkgdir/usr/share/plank/themes/frost
+	install -m 755 dock.theme $pkgdir/usr/share/plank/themes/frost/
 }
